@@ -1,5 +1,6 @@
 function startGrid(){
     for (let i=0;i<(16*16);i++){let newDiv = document.createElement('div');mycontainer.appendChild(newDiv);newDiv.addEventListener('mouseover',function(){this.style.backgroundColor = 'green';});newDiv.addEventListener('click',function(){this.style.backgroundColor = 'white';})}
+    if (document.getElementById('myModal').style.display = true){modal.style.display = 'false'}
 }
 
 function myPop(){
@@ -14,9 +15,10 @@ function myPop(){
    modal.appendChild(modalContent);
    modalContent.style.backgroundColor = 'green';
    modalContent.innerText = 'fart';
+   modalContent.style.padding = "2vh 2vw";
    const modalInput = document.createElement('input');
    modalContent.appendChild(modalInput);
-   modalInput.style.width = '20px';
+   modalInput.style.padding = '2vh 2vw';
    //close btn
    const closeBtn = document.createElement('button');
    modalContent.appendChild(closeBtn);
